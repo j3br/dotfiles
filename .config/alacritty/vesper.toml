@@ -1,0 +1,73 @@
+# Vesper Theme for Alacritty
+[colors.primary]
+foreground = "#FFFFFF"
+background = "#101010"
+dim_foreground = "#A0A0A0"
+bright_foreground = "#FFFFFF"
+
+[colors.cursor]
+text = "#FFFFFF"
+cursor = "#FFFFFF"
+
+[colors.vi_mode_cursor]
+text = "#FFFFFF"
+cursor = "#FFFFFF"
+
+[colors.search.matches]
+foreground = "#A0A0A0"
+background = "#262323"
+
+[colors.search.focused_match]
+foreground = "#FFFFFF"
+background = "#1C1C1C"
+
+[colors.hints.start]
+foreground = "#A0A0A0"
+background = "#1C1C1C"
+
+[colors.hints.end]
+foreground = "#6E6E6E"
+background = "#1C1C1C"
+
+[colors.line_indicator]
+foreground = "None"
+background = "None"
+
+[colors.footer_bar]
+foreground = "#A0A0A0"
+background = "#1C1C1C"
+
+[colors.selection]
+text = "#FFFFFF"
+background = "#666666"
+
+[colors.normal]
+black = "#101010"
+red = "#FF8080"
+green = "#99FFE4"
+yellow = "#FFC799"
+blue = "#99FFE4"
+magenta = "#FFC799"
+cyan = "#99FFE4"
+white = "#A0A0A0"
+
+[colors.bright]
+black = "#505050"
+red = "#FF8080"
+green = "#99FFE4"
+yellow = "#FFC799"
+blue = "#99FFE4"
+magenta = "#FFC799"
+cyan = "#99FFE4"
+white = "#FFFFFF"
+
+[colors.dim]
+black = "#505050"
+red = "#FF8080"
+green = "#99FFE4"
+yellow = "#FFC799"
+blue = "#99FFE4"
+magenta = "#FFC799"
+cyan = "#99FFE4"
+white = "#FFFFFF"
+
