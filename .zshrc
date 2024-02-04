@@ -50,3 +50,6 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+# Created by `pipx` on 2024-02-04 18:02:55
+export PATH="$PATH:/home/jebr/.local/bin"
