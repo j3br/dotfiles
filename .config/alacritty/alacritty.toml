@@ -2,3 +2,9 @@ import = ["~/.config/alacritty/vesper.toml"]
 [font.normal]
 family = "MesloLGS NF"
 
+[keyboard]
+bindings = [
+  { key = "Y", mods = "Alt", action = "Copy" },
+  { key = "P", mods = "Alt", action = "Paste" },
+  { key = "Return", mods = "Control|Shift", action = "SpawnNewInstance" },
+]
