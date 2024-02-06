@@ -1,4 +1,4 @@
-import = ["~/.config/alacritty/vesper.toml"]
+import = ["~/.config/alacritty/aura.toml"]
 [font.normal]
 family = "MesloLGS NF"
 
