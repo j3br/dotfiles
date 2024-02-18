@@ -10,3 +10,25 @@ lspconfig.pyright.setup({
   capabilities = capabilities,
   filetypes = {"python"},
 })
+
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    preferences = {
+      disableSUggestions = true,
+    }
+  }
+}
+
+lspconfig.astro.setup {
+  filetypes = {"astro"},
+}
+
+lspconfig.astro.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  init_options = {
+    configuration = {},
+  }
+}

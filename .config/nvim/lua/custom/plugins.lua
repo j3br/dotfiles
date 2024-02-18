@@ -14,6 +14,8 @@ local plugins = {
         "mypy",
         "ruff",
         "pyright",
+        "typescript-language-server",
+        "astro-language-server",
       },
     },
   },
