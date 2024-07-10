@@ -2,6 +2,9 @@ import = ["~/.config/alacritty/aura.toml"]
 [font.normal]
 family = "MesloLGS NF"
 
+[env]
+TERM = "xterm-256color"
+
 [keyboard]
 bindings = [
   { key = "Y", mods = "Alt", action = "Copy" },
