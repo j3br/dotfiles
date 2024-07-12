@@ -1,2 +1,9 @@
-README.md
-LICENSE
+\.git
+\.gitignore
+\.gitmodules
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+.*\.sw[pon]
