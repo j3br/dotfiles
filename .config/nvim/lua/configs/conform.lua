@@ -5,6 +5,7 @@ local options = {
     c = { "clang-format" },
     css = { "prettier" },
     html = { "prettier" },
+    astro = { "prettier" },
   },
 
   format_on_save = {
@@ -15,4 +16,3 @@ local options = {
 }
 
 require("conform").setup(options)
-

@@ -28,8 +28,8 @@ return {
         "html-lsp",
         "css-lsp",
         "prettier",
-	"astro-language-server",
-	"typescript-language-server",
+        "astro-language-server",
+        "typescript-language-server",
         "black",
         "mypy",
         "ruff",
@@ -52,4 +52,3 @@ return {
     },
   },
 }
-
