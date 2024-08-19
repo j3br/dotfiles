@@ -10,6 +10,15 @@ return {
       require "configs.conform"
     end,
   },
+  {
+    "nvim-tree/nvim-tree.lua",
+    opts = {
+      filters = {
+        dotfiles = false,
+        git_ignored = false,
+      },
+    },
+  },
 
   -- These are some examples, uncomment them if you want to see them work!
   {
