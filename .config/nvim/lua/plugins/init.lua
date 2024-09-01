@@ -57,6 +57,7 @@ return {
         "vimdoc",
         "html",
         "css",
+        "json",
       },
     },
   },
