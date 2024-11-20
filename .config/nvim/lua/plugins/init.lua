@@ -58,6 +58,8 @@ return {
         "html",
         "css",
         "json",
+        "rust",
+        "toml",
       },
     },
   },
