@@ -1,0 +1,62 @@
+#!/bin/zsh
+bump_e3_module_version() {
+    # Directory of the current working directory
+    local SCRIPT_DIR="$(pwd)"
+
+    # Path to CONFIG_MODULE
+    local CONFIG_MODULE="$SCRIPT_DIR/configure/CONFIG_MODULE"
+
+    # Function to get the current version
+    get_current_version() {
+        grep 'E3_MODULE_VERSION' "$CONFIG_MODULE" | grep -o '[0-9]\+\.[0-9]\+\.[0-9]\+\+[^ ]*'
+    }
+
+    # Function to replace the E3_MODULE_VERSION
+    replace_e3_module_version() {
+        local file="$1"
+        local new_version="$2"
+
+        if [[ -f "$file" ]]; then
+            sed -i "s/^E3_MODULE_VERSION := .*/E3_MODULE_VERSION := $new_version/" "$file"
+            echo "Updated E3_MODULE_VERSION in $file to $new_version"
+        else
+            echo "File $file does not exist."
+        fi
+    }
+
+    # Get the current version
+    local current_version=$(get_current_version)
+
+    # Split the version into parts
+    IFS='+' read -r version build <<< "$current_version"
+    IFS='.' read -r major minor patch <<< "$version"
+
+    # Bump the version based on the argument
+    case $1 in
+        major)
+            ((major++))
+            minor=0
+            patch=0
+            build=0
+            ;;
+        minor)
+            ((minor++))
+            patch=0
+            build=0
+            ;;
+        patch)
+            ((patch++))
+            build=0
+            ;;
+        build)
+            ((build++))
+            ;;
+        *)
+            echo "Usage: update_e3_module_version {major|minor|patch|build}"
+            return 1
+            ;;
+    esac
+
+    local new_version="$major.$minor.$patch+$build"
+    replace_e3_module_version "$CONFIG_MODULE" "$new_version"
+}
