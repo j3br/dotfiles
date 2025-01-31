@@ -1,7 +1,8 @@
 #!/bin/zsh
 bump_e3_module_version() {
     # Directory of the current working directory
-    local SCRIPT_DIR="$(pwd)"
+    local SCRIPT_DIR
+    SCRIPT_DIR="$(pwd)"
 
     # Path to CONFIG_MODULE
     local CONFIG_MODULE="$SCRIPT_DIR/configure/CONFIG_MODULE"
@@ -25,7 +26,8 @@ bump_e3_module_version() {
     }
 
     # Get the current version
-    local current_version=$(get_current_version)
+    local current_version
+    current_version=$(get_current_version)
 
     # Split the version into parts
     IFS='+' read -r version build <<< "$current_version"
