@@ -2,6 +2,7 @@
 
 .*.swp
 *~
+.config/zsh/.zcompdump*
 
 *.log
 
