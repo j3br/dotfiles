@@ -43,3 +43,6 @@ unset __conda_setup
 
 # Export default editor
 export EDITOR=/usr/bin/nvim
+
+# Created by `pipx` on 2025-02-04 09:42:37
+export PATH="$PATH:/home/jebr/.local/bin"
