@@ -271,7 +271,7 @@ load_plugins {
 // Default: default
 // 
 // theme "poimandres"
-theme "poimandres"
+theme "darkvoid_custom"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -451,6 +451,19 @@ themes {
     cyan "#add7ff"
     white "#e0def4"
     orange "#89ddff"
+  }
+  darkvoid_custom {
+    fg "#545454"
+    bg "#1c1c1c"
+    black "#1a1a1a"
+    red "#ff003d"
+    green "#1bfd9c"
+    yellow "#ffffba"
+    blue "#89ddff"
+    magenta "#fcc5e9"
+    cyan "#add7ff"
+    white "#c0c0c0"
+    orange "#d1d1d1"
   }
 }
 
