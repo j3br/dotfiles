@@ -272,6 +272,7 @@ load_plugins {
 // 
 // theme "poimandres"
 theme "darkvoid_custom"
+//theme "gruber-darker"
  
 // Choose the base input mode of zellij.
 // Default: normal
@@ -464,6 +465,19 @@ themes {
     cyan "#add7ff"
     white "#c0c0c0"
     orange "#d1d1d1"
+  }
+  gruber-darker {
+    fg "#545454"
+    bg "#1a1a1a"
+    black "#101010"
+    red "#f43841"
+    green "#73c936"
+    yellow "#ffdd33"
+    blue "#bdfe58"
+    magenta "#9e95c7"
+    cyan "#7fa1c3"
+    white "#e6e6e6"
+    orange "#cc8c3c"
   }
 }
 
