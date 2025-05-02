@@ -1,0 +1,6 @@
+font-family = "JetBrainsMono Nerd Font"
+# theme = gruber-darker
+theme = darkvoid
+background-opacity = 0.9
+background-blur = true
+cursor-text = #000000
